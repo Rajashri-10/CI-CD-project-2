@@ -33,7 +33,7 @@ jobs:
       - name: Run Calculator Script
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python scr/calculator.py
+        run: python src/calculator.py
 
   deploy:
     needs: build-and-test
